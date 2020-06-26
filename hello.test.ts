@@ -6,4 +6,5 @@ test('setTimeout', () => {
   hello('jest', callback);
   jest.runAllTimers();
   expect(callback).toHaveBeenCalledWith('Hello, jest!');
+  jest.clearAllTimers();
 })
